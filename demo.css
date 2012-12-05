@@ -1,0 +1,237 @@
+body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
+	/* A simple page reset */
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	color:white;
+	font-size:13px;
+	background: #003951;
+	font-family:Arial, Helvetica, sans-serif;
+		
+	text-shadow:2px 2px 5px #333333;
+	
+}
+
+.tut-title{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.tut-description{
+	color:#DDDDDD;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
+	padding-top:5px;
+}
+
+.tut-img{
+	border:1px solid white;
+	float:left;
+	margin:0 15px 0 0;
+	
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	
+	/* CSS3 Box Shadow */
+	-moz-box-shadow:2px 2px 3px #333333;
+	-webkit-box-shadow:2px 2px 3px #333333;
+	box-shadow:2px 2px 3px #333333;
+	cursor:n-resize;
+	position:relative;
+}
+
+.drag-label{
+	/* The DRAG label that scrolls into visibility on hover */
+	background:url(img/label_small.png) no-repeat;
+	width:71px;
+	height:25px;
+	position:relative;
+	margin-left:25px;
+}
+
+a.button{
+	/* The pretty buttons on the bottom are actually hyperlinks.. */
+	color:#434343 !important;
+	display:block;
+	float:left;
+	font-size:10px;
+	font-weight:bold;
+	height:23px;
+	margin:10px;
+	padding:12px 10px 0 12px;
+	position:relative;
+	text-shadow:none;
+	text-transform:uppercase;
+
+	/* This is the left part of the button background image */
+
+	background:transparent url(img/button_gray_bg.png) no-repeat;
+}
+
+a.button:hover{
+	text-decoration:none !important;
+	background-position:bottom left;
+}
+
+a.button:active{
+	/* Offsetting the text 1px to the bottom on mouse-click*/
+	padding-top:13px;
+	height:22px;
+}
+
+a.button span{
+	/* This span holds the right part of the button backgound */
+	background:transparent url(img/button_gray_bg.png) no-repeat right top;
+	height:35px;
+	position:absolute;
+	right:-2px;
+	top:0;
+	width:10px;
+	display:block;
+}
+
+a.button:hover span{
+	background-position:bottom right;
+}
+
+.button-holder{
+	padding-left:107px;
+	padding-top:10px;
+}
+
+ul.sort{
+	/* This UL gets converted to a sortable by jQuery */
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size:20px;
+}
+
+ul.sort li{
+	margin:25px 50px 25px 0;
+	height:102px;
+	list-style:none;
+}
+
+.chart{
+	/* Styling the chart container */
+	background:#002A3C;
+	border:1px solid #005A7F;
+	height:auto; /* adapt here ~60 * items */
+	width:550px;
+}
+
+.bar{
+	/* Each bar in the chart is a div. Colors and width are assigned later */
+	height:17px;
+	margin:15px;
+	overflow:hidden;
+	padding:15px 10px 10px;
+	text-shadow:none;
+	white-space:nowrap;
+}
+
+.bar a, .bar a:visited{
+	color:white;
+	font-size:12px;
+}
+
+.tot-votes{
+	float:right;
+	font-size:10px;
+	font-weight:bold;
+	position:relative;
+	right:50px;
+	text-transform:uppercase;
+	top:18px;
+}
+
+/* General styles for the demo page */
+
+h1{
+	/* The title of the page */
+	color:white;
+	font-family:"MyRiad Pro",Arial,Helvetica,sans-serif;
+	font-size:38px;
+	font-weight:normal;
+}
+
+h2{
+	/* The subtitle */
+	font-family:"MyRiad Pro","Arial Narrow",Arial,Helvetica,sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	letter-spacing:1px;
+	padding-left:2px;
+	text-transform:uppercase;
+	white-space:nowrap;
+	margin:10px 0 25px;
+}
+
+#orig{
+	/* The link that is positioned above the title */
+	font-family:"MyRiad Pro",Arial;
+	font-size:10px;
+	letter-spacing:1px;
+	padding-bottom:15px;
+	text-transform:uppercase;
+}
+
+hr{
+	/* The horizontal ruler */
+	background-color:#BBBBBB;
+	border:medium none;
+	color:#BBBBBB;
+	height:1px;
+	margin:30px auto;
+	width:450px;
+}
+
+.clear{
+	/* The clearfix hack */
+	clear:both;
+}
+
+#main{
+	/* The main container */
+	width:600px;
+	margin:30px auto;
+}
+
+a img{
+	border:none;
+}
+
+a, a:visited {
+	color:#00BBFF;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+.tutorial-info{
+	text-align:center;
+	padding:10px;
+}
+
+.error {	
+    background-color: red;
+    margin: 30px;
+    padding: 5px;
+    top:;
+    position: relative;
+    top: -15px;
+}
+
+.notice {	
+    background-color: red;
+    margin: 30px;
+    padding: 5px;
+    top:;
+    position: relative;
+    top: -15px;
+}
